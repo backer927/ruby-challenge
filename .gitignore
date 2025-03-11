@@ -1,5 +1,6 @@
-# Ignore the solution file
+# Ignore the solution files
 functional_challenge_solution.rb
+advanced_functional_solution.rb
 
 # Ruby specific ignores
 *.gem
