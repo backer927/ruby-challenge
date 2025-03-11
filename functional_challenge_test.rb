@@ -33,7 +33,7 @@ class FunctionalChallengeTest < Minitest::Test
     assert_equal 11, composed.call(5)  # (5 * 2) + 1 = 11
     
     composed_three = FunctionalChallenge.compose(add_one, multiply_by_two, ->(x) { x - 3 })
-    assert_equal 5, composed_three.call(4)  # ((4 - 3) * 2) + 1 = 3
+    assert_equal 3, composed_three.call(4)  # ((4 - 3) * 2) + 1 = 3
   end
 
   def test_pipe
@@ -44,7 +44,7 @@ class FunctionalChallengeTest < Minitest::Test
     assert_equal 12, piped.call(5)  # (5 + 1) * 2 = 12
     
     piped_three = FunctionalChallenge.pipe(add_one, multiply_by_two, ->(x) { x - 3 })
-    assert_equal 9, piped_three.call(4)  # ((4 + 1) * 2) - 3 = 7
+    assert_equal 7, piped_three.call(4)  # ((4 + 1) * 2) - 3 = 7
   end
 
   def test_memoize
