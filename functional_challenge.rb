@@ -66,7 +66,7 @@ module FunctionalChallenge
       else
         remaining = arity - args.length
         lambda do |*more_args|
-          curry(func, remaining).call(*args, *more_args)
+          curry(lambda { |*final_args| func.call(*args, *final_args) }, remaining).call(*more_args)
         end
       end
     end
