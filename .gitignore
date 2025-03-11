@@ -1,0 +1,30 @@
+# Ignore the solution file
+functional_challenge_solution.rb
+
+# Ruby specific ignores
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Environment normalization
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# RVM/rbenv files
+.ruby-version
+.ruby-gemset
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo 
